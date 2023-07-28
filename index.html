@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/345ede191d.js" crossorigin="anonymous"></script>
+    <title>Musicie</title>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+                <h1 class="app-name">AMuzic</h1>
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img  class="song-img" id="coverArt" alt="">
+            <h1 id="songName">Song name</h1>
+            <p id="artistName">Artist Name</p>
+            <audio id="audioPlayer">
+                <source src="media/song1.mp3" type="audio/mp3">
+                <source src="media/song2.mp3" type="audio/mp3">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="controls">
+                <div><i class="fa-solid fa-backward" id="backwardBtn"></i></div>
+                <div><i class="fa-solid fa-play" id="cntrlIcon"></i></div>
+                <div><i class="fa-solid fa-forward" id="forwardBtn"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
